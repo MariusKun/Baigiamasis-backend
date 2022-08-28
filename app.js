@@ -24,18 +24,3 @@ app.use(session({
 }))
 app.use('/', router)
 
-// let users = []
-// io.on('connect', socket => {
-//     socket.on('login', async data => {
-//         if (!users.find(x=>x.userID===data._id)) {
-//             users.push({socketID: socket.id, userID:data._id})
-//         }
-        
-//     })
-//     socket.on('alert', data => {
-//         console.log(data)
-//         let user = users.find(x=>x.userID===data.id)
-//         if (user) io.to(user.socketID).emit('alert', data.message)
-//     })
-   
-// })
